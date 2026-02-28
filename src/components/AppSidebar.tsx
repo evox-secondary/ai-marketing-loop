@@ -21,10 +21,14 @@ import {
   Settings,
   Bell,
   Zap,
+  Paintbrush,
+  Megaphone,
 } from "lucide-react";
 
 const navItems = [
   { title: "Dashboard", url: "/", icon: LayoutDashboard },
+  { title: "Ads Manager", url: "/ads", icon: Megaphone },
+  { title: "Creative Studio", url: "/studio", icon: Paintbrush },
   { title: "Agents", url: "/agents", icon: Bot },
   { title: "Agent Loop", url: "/loop", icon: RefreshCw },
   { title: "Reports", url: "/reports", icon: FileText },
