@@ -10,6 +10,8 @@ import LoopPage from "@/pages/LoopPage";
 import ReportsPage from "@/pages/ReportsPage";
 import NotificationsPage from "@/pages/NotificationsPage";
 import SettingsPage from "@/pages/SettingsPage";
+import CreativeStudioPage from "@/pages/CreativeStudioPage";
+import AdsManagerPage from "@/pages/AdsManagerPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +25,8 @@ const App = () => (
         <DashboardLayout>
           <Routes>
             <Route path="/" element={<DashboardPage />} />
+            <Route path="/ads" element={<AdsManagerPage />} />
+            <Route path="/studio" element={<CreativeStudioPage />} />
             <Route path="/agents" element={<AgentsPage />} />
             <Route path="/loop" element={<LoopPage />} />
             <Route path="/reports" element={<ReportsPage />} />
